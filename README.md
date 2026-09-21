@@ -1,92 +1,85 @@
 **English** | [العربية](README.ar.md)
 
-# Masarifi Task & Focus Tracker
+# Masarifi - Personal Expense & Income Tracker
 
-An Arabic, mobile-first productivity prototype that combines a persistent task list with a focus timer, session statistics, and unlockable achievements. The interface is implemented with vanilla JavaScript and Tailwind CSS.
+A responsive, Arabic-first (RTL) personal finance web application built strictly following the **Google Stitch** design system specification and the product rules defined in `Rules.md`.
 
-## Implemented Features
+It allows users to track daily income and expenses, viewing an interactive summary dashboard for the current month's operations, current balance, total income, and total expenses.
 
-- Add, complete, and delete tasks
-- Filter all, active, or completed tasks
-- Clear all completed tasks
-- Save task data in browser local storage
-- Start, pause, and finish timed focus sessions
-- Track completed sessions and total elapsed time locally
-- Unlock six achievements based on time and session milestones
-- Responsive Arabic RTL interface
-- Login and sign-up interface prepared for Supabase Auth
-- Lightweight Node.js static-file server
+---
+
+## Key Features
+
+- **Smart Statistical Dashboard:**
+  - Real-time display of Current Balance, Total Income (green accent), and Total Expenses (red accent).
+  - Dynamic calculations updating instantly when adding, editing, or deleting any transaction.
+- **Transaction Management (CRUD):**
+  - Add new transactions (Income or Expense) with title, amount, category, and date.
+  - Quick inline actions to Edit or Delete transactions.
+  - Multi-category icons (Groceries/Shopping, Food, Transportation, Utilities, Salary, Healthcare, etc.).
+- **Interactive Modal Popup:**
+  - Centered popup dialog with backdrop blur (`backdrop-blur`) for smooth entry and editing.
+- **Authentication System:**
+  - Modern authentication view (`login.html`) featuring the official Masarifi logo.
+  - Pre-configured for **Supabase Auth** with an automatic local demo fallback for instant zero-config testing.
+- **Pixel-Matched to Google Stitch:**
+  - Implements the exact brand palette (`#3525cd`, `#4f46e5`, `#fcf8ff`), `Cairo` & `Inter` typography, and Material Symbols Outlined.
+  - Fully responsive: Mobile top app bar and desktop fixed side navigation drawer.
+
+---
 
 ## Tech Stack
 
-- HTML5
-- Tailwind CSS through CDN
-- Vanilla JavaScript with ES modules
-- Browser Local Storage
-- Supabase JavaScript client for the authentication scaffold
-- Node.js built-in HTTP server
+- **HTML5** with Arabic Right-to-Left layout (`dir="rtl"`).
+- **Tailwind CSS** configured with Google Stitch design tokens.
+- **Vanilla JavaScript (ES6+)** with ES Modules (Zero front-end frameworks).
+- **Supabase JavaScript Client** for authentication & database integration.
+- **Lightweight Built-in Node.js Server** (Zero external dependencies).
+
+---
 
 ## Project Structure
 
 ```text
 Masarifi_VB_Coding/
-├── index.html       # Task-list page
-├── timer.html       # Focus timer, statistics, and achievements
-├── login.html       # Supabase login and sign-up interface
-├── server.js        # Local static-file server
-├── css/style.css    # Custom styles
+├── index.html                           # Main Dashboard & Transaction Management
+├── login.html                           # Authentication View
+├── assets/
+│   └── logo.png                         # Official Masarifi App Logo
+├── css/
+│   └── style.css                        # Theme tokens, font imports & custom overrides
 ├── js/
-│   ├── app.js       # Task CRUD, filters, and local persistence
-│   ├── timer.js     # Timer, statistics, and achievements
-│   ├── auth.js      # Supabase authentication functions
-│   └── config.js    # Supabase configuration placeholders
-└── Rules.md         # Original product brief
+│   ├── app.js                           # Dashboard logic, balance computation & CRUD
+│   ├── auth.js                          # Login/signup/logout & session check
+│   └── config.js                        # Supabase credentials & configuration
+├── server.js                            # Local static-file web server
+├── Rules.md                             # Original product specification
+└── stitch_masarifi_expense_tracker/     # Reference Google Stitch assets and designs
 ```
 
-## Run Locally
+---
 
-Node.js is required, but there are no packages to install.
+## Running Locally
+
+Node.js is required to serve the files, but no external packages need to be installed (`npm install` is not required):
 
 ```bash
-git clone https://github.com/mohammadimad/Masarifi_VB_Coding.git
-cd Masarifi_VB_Coding
+# Start local server
 node server.js
 ```
 
-Open `http://localhost:8081/` for the task list or `http://localhost:8081/timer.html` for the timer.
+Then visit:
+- Dashboard: [http://localhost:8081/index.html](http://localhost:8081/index.html)
+- Login: [http://localhost:8081/login.html](http://localhost:8081/login.html)
 
-## Authentication Setup
+---
 
-`js/config.js` contains placeholder values. To try the login page, create a Supabase project and replace only the public project URL and anonymous key:
+## Supabase Setup (Optional)
 
-```js
-const SUPABASE_URL = "YOUR_SUPABASE_URL_HERE";
-const SUPABASE_ANON_KEY = "YOUR_SUPABASE_ANON_KEY_HERE";
-```
-
-Never expose a Supabase service-role key in client-side code. Configure Row Level Security before connecting user-owned data.
-
-## Verification
-
-The server and JavaScript modules pass Node.js syntax checks. The repository contains placeholder Supabase configuration rather than committed credentials.
-
-## Current Scope
-
-- The current implementation is a task and focus tracker, although `Rules.md` describes an earlier personal-finance concept.
-- Tasks, timer statistics, and achievements are stored only in the current browser.
-- Supabase authentication requires configuration and is not connected to the task or timer data.
-- The task and timer pages currently do not enforce a Supabase session.
-- No income or expense tracking is implemented.
-
-## Possible Improvements
-
-- Align the repository name and product brief with the implemented application
-- Connect tasks and sessions to authenticated Supabase users
-- Add Row Level Security policies and route protection
-- Restore an active timer accurately after a refresh
-- Add input limits, automated tests, and offline error handling
-- Package Tailwind CSS for production instead of relying on the CDN
-
-## Author
-
-[Mohammad Abdelfattah](https://github.com/mohammadimad)
+The application works out of the box using browser local storage. To connect your live Supabase cloud backend:
+1. Create a project on [Supabase](https://supabase.com).
+2. Open `js/config.js` and add your project URL and public anon key:
+   ```javascript
+   export const SUPABASE_URL = "https://your-project.supabase.co";
+   export const SUPABASE_ANON_KEY = "your-anon-key";
+   ```

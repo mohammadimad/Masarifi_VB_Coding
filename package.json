@@ -1,0 +1,23 @@
+{
+  "name": "masarifi_vb_coding",
+  "version": "1.0.0",
+  "description": "**English** | [العربية](README.ar.md)",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohammadimad/Masarifi_VB_Coding.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/mohammadimad/Masarifi_VB_Coding/issues"
+  },
+  "homepage": "https://github.com/mohammadimad/Masarifi_VB_Coding#readme"
+}

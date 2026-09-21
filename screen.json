@@ -1,0 +1,288 @@
+{
+  "screenshot": {
+    "name": "projects/2195153066619328008/files/5726940636483460409",
+    "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1WNf1o4fe3fjOvDGWLzLcNUXdjAcHpgDeVc41wAk-wseB4bVtykeb_yQhYCm29NcAWj8d91EkhrvXca__j6-8i7QjmXecqzduijKJHd3VA-LmxSNNTlzkhCou8HvLfo7_eJ8qi7a-TyGl6IWE___PiDAITQXDW7eCTVH19HcbfrL6IDwuhXstWdrlY8T6eeNwZmvBz05V4aTMn_5fBIiFMJ-qju-gc7U1XsjUlRdQSVAKaLwCeiNPf0OOw"
+  },
+  "htmlCode": {
+    "name": "projects/2195153066619328008/files/2909766284226375413",
+    "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzAwMDY1YmVmMzIxZDUzMjMwNDRmNmNhZTY1MDBiNWZlEgsSBxCQsf3xthcYAZIBIwoKcHJvamVjdF9pZBIVQhMyMTk1MTUzMDY2NjE5MzI4MDA4&filename=&opi=89354086",
+    "mimeType": "text/html"
+  },
+  "id": "2f94a3baa62f4d20a0a5b49c6c7d89fb",
+  "generatedBy": "figaro_agent",
+  "width": "2560",
+  "height": "2796",
+  "title": "الميزانية - مصاريفي",
+  "prompt": "قم بإنشاء صفحة \"الميزانية\" (Budgeting Page) باللغة العربية متوافقة تماماً مع اتجاه RTL وهوية تطبيق \"مصاريفي\".\n\nمحتوى وأقسام صفحة الميزانية:\n1. ترويسة الصفحة (Page Header):\n- العنوان الرئيسي: \"إدارة الميزانية الشهرية\"\n- نص فرعي: \"تتبع خطط الإنفاق وحدد أهدافك المالية لكل تصنيف لهذا الشهر\"\n- زر بارز باللون الأساسي (Indigo/Primary): \"إضافة ميزانية جديدة +\"\n\n2. بطاقات المؤشرات العلوية (Overview KPI Cards):\n- إجمالي الميزانية المحددة: مثلاً $3,200.00\n- إجمالي المنصرف حتى الآن: مثلاً $1,850.00 مع شريط تقدم عام (58%) ونسبة مئوية واضحة\n- المتبقي الكلي من الميزانية: مثلاً $1,350.00 باللون الأخضر/المحايد المطمئن\n- معدل الإنفاق اليومي المقترح أو الأيام المتبقية في الشهر: \"متبقي 12 يوماً\"\n\n3. قائمة بطاقات التصنيفات وفئات الإنفاق (Budget Category Cards Grid):\nعرض شبكي (Grid) يحتوي على بطاقات أنيقة لكل فئة إنفاق:\n- تصنيف \"السكن والفواتير\":\n  - الميزانية المحددة: $1,000 | المنفق: $850 | المتبقي: $150\n  - شريط تقدم ملون (Progress Bar) بحالة تنبيهية خفيفة (85%)\n  - أيقونة مناسبة (منزل)، تاريخ آخر تحديث، وزر تعديل/حذف سريع\n- تصنيف \"المواد الغذائية والتموين\":\n  - الميزانية: $600 | المنفق: $420 | المتبقي: $180 (70%)\n  - شريط تقدم، أيقونة تسوق، ونسبة الاستهلاك\n- تصنيف \"المطاعم والترفيه\":\n  - الميزانية: $350 | المنفق: $380 (تجاوز الميزانية! Over Budget بنسبة 108%)\n  - شريط تقدم باللون الأحمر التحذيري مع شارة واضحة \"تم تجاوز الحد بـ $30\"\n- تصنيف \"المواصلات والوقود\":\n  - الميزانية: $300 | المنفق: $120 | المتبقي: $180 (40%)\n  - شريط تقدم أخضر هادئ، أيقونة سيارة\n- تصنيف \"الصحة والعناية\":\n  - الميزانية: $200 | المنفق: $50 | المتبقي: $150 (25%)\n- تصنيف \"الادخار والاستثمار\":\n  - الهدف الشهري: $750 | المدخر: $500 (66%) مع أيقونة حصالة أو نمو مالي\n\n4. قسم تحليلي جانبي أو سفلي (Budget Insights & Tips):\n- بطاقة نصائح وتحليل ذكي: \"تنبيه ذكي: لقد اقتربت من تجاوز ميزانية الترفيه، وفرت 30% في المواصلات هذا الأسبوع.\"\n- رسم بياني بيئي مبسط أو توزيع النسب للميزانيات.\n\n5. نافذة منبثقة أو نموذج مصغر (Modal / Card structure) جاهز لإضافة أو تعديل فئة ميزانية جديدة.\n\nاحرص على تناسق الألوان والظلال وحواف البطاقات المستديرة مع لوحة التحكم الحالية (index.html) مع استخدام خط واضح، أيقونات دلالية معبرة، ودعم كامل للغة العربية والاتجاه من اليمين لليسار.",
+  "name": "projects/2195153066619328008/screens/2f94a3baa62f4d20a0a5b49c6c7d89fb",
+  "theme": {
+    "colorMode": "LIGHT",
+    "font": "INTER",
+    "roundness": "ROUND_EIGHT",
+    "customColor": "#4f46e5",
+    "headlineFont": "INTER",
+    "bodyFont": "INTER",
+    "labelFont": "INTER",
+    "namedColors": {
+      "surface_container_lowest": "#ffffff",
+      "on_tertiary_fixed_variant": "#7b2f00",
+      "secondary_fixed": "#e1e3e4",
+      "on_primary_fixed_variant": "#3323cc",
+      "surface_container_high": "#eae6f4",
+      "tertiary_fixed": "#ffdbcc",
+      "on_background": "#1b1b24",
+      "on_secondary_fixed_variant": "#454748",
+      "on_tertiary_container": "#ffd2be",
+      "error_container": "#ffdad6",
+      "tertiary": "#7e3000",
+      "primary_container": "#4f46e5",
+      "on_primary_container": "#dad7ff",
+      "inverse_primary": "#c3c0ff",
+      "on_tertiary": "#ffffff",
+      "on_surface": "#1b1b24",
+      "tertiary_fixed_dim": "#ffb695",
+      "surface": "#fcf8ff",
+      "on_error_container": "#93000a",
+      "on_primary_fixed": "#0f0069",
+      "on_error": "#ffffff",
+      "inverse_surface": "#302f39",
+      "surface_tint": "#4d44e3",
+      "surface_dim": "#dcd8e5",
+      "error": "#ba1a1a",
+      "on_surface_variant": "#464555",
+      "primary_fixed": "#e2dfff",
+      "secondary_container": "#e1e3e4",
+      "tertiary_container": "#a44100",
+      "on_secondary_container": "#626566",
+      "inverse_on_surface": "#f3effc",
+      "outline": "#777587",
+      "on_secondary": "#ffffff",
+      "secondary": "#5c5f60",
+      "background": "#fcf8ff",
+      "surface_container": "#f0ecf9",
+      "surface_container_low": "#f5f2ff",
+      "surface_bright": "#fcf8ff",
+      "on_tertiary_fixed": "#351000",
+      "outline_variant": "#c7c4d8",
+      "surface_variant": "#e4e1ee",
+      "primary": "#3525cd",
+      "primary_fixed_dim": "#c3c0ff",
+      "on_secondary_fixed": "#191c1d",
+      "on_primary": "#ffffff",
+      "surface_container_highest": "#e4e1ee",
+      "secondary_fixed_dim": "#c5c7c8"
+    },
+    "colorVariant": "FIDELITY",
+    "overridePrimaryColor": "#4f46e5",
+    "overrideSecondaryColor": "#f9fafb",
+    "spacingScale": 2,
+    "typography": {
+      "headline-lg-mobile": {
+        "fontFamily": "Inter",
+        "fontSize": "24px",
+        "fontWeight": "700",
+        "lineHeight": "1.3"
+      },
+      "label-md": {
+        "fontFamily": "Inter",
+        "fontSize": "14px",
+        "fontWeight": "500",
+        "lineHeight": "1.4"
+      },
+      "label-sm": {
+        "fontFamily": "Inter",
+        "fontSize": "12px",
+        "fontWeight": "600",
+        "lineHeight": "1.2"
+      },
+      "headline-md": {
+        "fontFamily": "Inter",
+        "fontSize": "24px",
+        "fontWeight": "600",
+        "lineHeight": "1.4"
+      },
+      "display-lg": {
+        "fontFamily": "Inter",
+        "fontSize": "48px",
+        "fontWeight": "700",
+        "lineHeight": "1.2",
+        "letterSpacing": "-0.02em"
+      },
+      "body-md": {
+        "fontFamily": "Inter",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "1.6"
+      },
+      "headline-lg": {
+        "fontFamily": "Inter",
+        "fontSize": "32px",
+        "fontWeight": "700",
+        "lineHeight": "1.3"
+      },
+      "body-lg": {
+        "fontFamily": "Inter",
+        "fontSize": "18px",
+        "fontWeight": "400",
+        "lineHeight": "1.6"
+      }
+    },
+    "spacing": {
+      "gutter": "24px",
+      "container-max": "1280px",
+      "md": "16px",
+      "xs": "4px",
+      "lg": "24px",
+      "xl": "32px",
+      "sm": "8px",
+      "2xl": "48px",
+      "base": "4px"
+    },
+    "headlineFontFamily": "Inter",
+    "bodyFontFamily": "Inter",
+    "labelFontFamily": "Inter"
+  },
+  "deviceType": "DESKTOP",
+  "screenType": "DESIGN",
+  "screenMetadata": {
+    "agentType": "PRO_AGENT",
+    "status": "COMPLETE",
+    "displayMode": "HTML"
+  },
+  "designSystem": {
+    "name": "assets/bfd8458beb454896b10dc53a1826d752",
+    "designSystem": {
+      "displayName": "Masarifi",
+      "styleGuidelines": "## Brand & Style\nThe design system is engineered for a personal finance platform that prioritizes clarity, financial confidence, and effortless tracking. The brand personality is **trustworthy, transparent, and modern**, aiming to transform complex financial data into actionable insights.\n\nThe visual style follows a **Modern Corporate** aesthetic with a lean toward **Minimalism**. It utilizes high-quality typography, generous whitespace to reduce cognitive load, and a refined use of tonal layers. Since the application is designed for the Arabic language (RTL), the visual balance is mirrored to ensure a natural reading flow from right to left, emphasizing a premium and organized user experience.\n\n## Layout & Spacing\nThis design system employs a **12-column fluid grid** for desktop and a **4-column grid** for mobile. \n\n- **Desktop:** 24px gutters with 48px page margins.\n- **Mobile:** 16px gutters with 16px page margins.\n\nThe spacing scale is based on a 4px baseline, ensuring all elements align to a consistent rhythm. Layouts should favor \"Surface-first\" grouping, where related financial data is housed within cards rather than floating freely. In RTL mode, the sidebar or navigation drawer is anchored to the right, and the content flows toward the left.\n\n## Elevation & Depth\nDepth is created using a combination of **Tonal Layers** and **Ambient Shadows**.\n\n1.  **Level 0 (Background):** Secondary Light Gray (#F9FAFB).\n2.  **Level 1 (Cards/Content):** Pure White (#FFFFFF) with a `shadow-sm` (0 1px 2px 0 rgba(0, 0, 0, 0.05)).\n3.  **Level 2 (Modals/Dropdowns):** Pure White with a `shadow-lg` to create a distinct separation from the base content.\n\nBorders are used sparingly, primarily as subtle 1px dividers in `#E5E7EB` to separate list items or table rows without adding visual noise.\n\n## Components\n### Buttons\n- **Primary:** Solid Indigo background, White text. High contrast, bold weight.\n- **Secondary:** Light Gray background with Dark Gray text for less prominent actions.\n- **State:** On hover, primary buttons darken by 10%. Active states should show a subtle inner shadow.\n\n### Cards\n- White background, `rounded-2xl` corners, and `shadow-sm`. \n- Used for transaction summaries, budget progress, and account balances.\n\n### Input Fields\n- White background with a 1px border (#D1D5DB).\n- **Focus State:** 2px solid Indigo (#4F46E5) border with a soft Indigo outer glow.\n- Labels are positioned above the input, right-aligned.\n\n### Chips & Badges\n- Used for transaction categories. \n- Income uses Success Green with 10% opacity background and solid green text. \n- Expenses use Danger Red with 10% opacity background and solid red text.\n\n### Progress Bars\n- Used for budgets. The track is Light Gray, and the fill is Primary Indigo. \n- If a budget is exceeded, the fill color dynamically switches to Danger Red.",
+      "theme": {
+        "colorMode": "LIGHT",
+        "font": "INTER",
+        "roundness": "ROUND_EIGHT",
+        "customColor": "#4f46e5",
+        "headlineFont": "INTER",
+        "bodyFont": "INTER",
+        "labelFont": "INTER",
+        "namedColors": {
+          "on_error": "#ffffff",
+          "surface_container_low": "#f5f2ff",
+          "inverse_surface": "#302f39",
+          "error": "#ba1a1a",
+          "outline": "#777587",
+          "surface_tint": "#4d44e3",
+          "surface_container_high": "#eae6f4",
+          "inverse_primary": "#c3c0ff",
+          "on_surface": "#1b1b24",
+          "tertiary": "#7e3000",
+          "primary_container": "#4f46e5",
+          "on_error_container": "#93000a",
+          "error_container": "#ffdad6",
+          "surface_bright": "#fcf8ff",
+          "tertiary_fixed_dim": "#ffb695",
+          "primary": "#3525cd",
+          "surface_container_highest": "#e4e1ee",
+          "secondary_fixed": "#e1e3e4",
+          "primary_fixed": "#e2dfff",
+          "on_tertiary_fixed_variant": "#7b2f00",
+          "on_secondary_container": "#626566",
+          "on_primary": "#ffffff",
+          "tertiary_fixed": "#ffdbcc",
+          "surface_container": "#f0ecf9",
+          "inverse_on_surface": "#f3effc",
+          "secondary_container": "#e1e3e4",
+          "outline_variant": "#c7c4d8",
+          "surface_variant": "#e4e1ee",
+          "tertiary_container": "#a44100",
+          "on_surface_variant": "#464555",
+          "on_primary_container": "#dad7ff",
+          "surface_dim": "#dcd8e5",
+          "on_background": "#1b1b24",
+          "surface_container_lowest": "#ffffff",
+          "background": "#fcf8ff",
+          "on_tertiary_fixed": "#351000",
+          "secondary_fixed_dim": "#c5c7c8",
+          "on_secondary_fixed": "#191c1d",
+          "on_primary_fixed_variant": "#3323cc",
+          "surface": "#fcf8ff",
+          "on_primary_fixed": "#0f0069",
+          "on_tertiary": "#ffffff",
+          "on_secondary": "#ffffff",
+          "on_tertiary_container": "#ffd2be",
+          "on_secondary_fixed_variant": "#454748",
+          "secondary": "#5c5f60",
+          "primary_fixed_dim": "#c3c0ff"
+        },
+        "designMd": "---\nname: Masarifi\ncolors:\n  surface: '#fcf8ff'\n  surface-dim: '#dcd8e5'\n  surface-bright: '#fcf8ff'\n  surface-container-lowest: '#ffffff'\n  surface-container-low: '#f5f2ff'\n  surface-container: '#f0ecf9'\n  surface-container-high: '#eae6f4'\n  surface-container-highest: '#e4e1ee'\n  on-surface: '#1b1b24'\n  on-surface-variant: '#464555'\n  inverse-surface: '#302f39'\n  inverse-on-surface: '#f3effc'\n  outline: '#777587'\n  outline-variant: '#c7c4d8'\n  surface-tint: '#4d44e3'\n  primary: '#3525cd'\n  on-primary: '#ffffff'\n  primary-container: '#4f46e5'\n  on-primary-container: '#dad7ff'\n  inverse-primary: '#c3c0ff'\n  secondary: '#5c5f60'\n  on-secondary: '#ffffff'\n  secondary-container: '#e1e3e4'\n  on-secondary-container: '#626566'\n  tertiary: '#7e3000'\n  on-tertiary: '#ffffff'\n  tertiary-container: '#a44100'\n  on-tertiary-container: '#ffd2be'\n  error: '#ba1a1a'\n  on-error: '#ffffff'\n  error-container: '#ffdad6'\n  on-error-container: '#93000a'\n  primary-fixed: '#e2dfff'\n  primary-fixed-dim: '#c3c0ff'\n  on-primary-fixed: '#0f0069'\n  on-primary-fixed-variant: '#3323cc'\n  secondary-fixed: '#e1e3e4'\n  secondary-fixed-dim: '#c5c7c8'\n  on-secondary-fixed: '#191c1d'\n  on-secondary-fixed-variant: '#454748'\n  tertiary-fixed: '#ffdbcc'\n  tertiary-fixed-dim: '#ffb695'\n  on-tertiary-fixed: '#351000'\n  on-tertiary-fixed-variant: '#7b2f00'\n  background: '#fcf8ff'\n  on-background: '#1b1b24'\n  surface-variant: '#e4e1ee'\ntypography:\n  display-lg:\n    fontFamily: Inter\n    fontSize: 48px\n    fontWeight: '700'\n    lineHeight: '1.2'\n    letterSpacing: -0.02em\n  headline-lg:\n    fontFamily: Inter\n    fontSize: 32px\n    fontWeight: '700'\n    lineHeight: '1.3'\n  headline-lg-mobile:\n    fontFamily: Inter\n    fontSize: 24px\n    fontWeight: '700'\n    lineHeight: '1.3'\n  headline-md:\n    fontFamily: Inter\n    fontSize: 24px\n    fontWeight: '600'\n    lineHeight: '1.4'\n  body-lg:\n    fontFamily: Inter\n    fontSize: 18px\n    fontWeight: '400'\n    lineHeight: '1.6'\n  body-md:\n    fontFamily: Inter\n    fontSize: 16px\n    fontWeight: '400'\n    lineHeight: '1.6'\n  label-md:\n    fontFamily: Inter\n    fontSize: 14px\n    fontWeight: '500'\n    lineHeight: '1.4'\n  label-sm:\n    fontFamily: Inter\n    fontSize: 12px\n    fontWeight: '600'\n    lineHeight: '1.2'\nrounded:\n  sm: 0.25rem\n  DEFAULT: 0.5rem\n  md: 0.75rem\n  lg: 1rem\n  xl: 1.5rem\n  full: 9999px\nspacing:\n  base: 4px\n  xs: 4px\n  sm: 8px\n  md: 16px\n  lg: 24px\n  xl: 32px\n  2xl: 48px\n  container-max: 1280px\n  gutter: 24px\n---\n\n## Brand & Style\nThe design system is engineered for a personal finance platform that prioritizes clarity, financial confidence, and effortless tracking. The brand personality is **trustworthy, transparent, and modern**, aiming to transform complex financial data into actionable insights.\n\nThe visual style follows a **Modern Corporate** aesthetic with a lean toward **Minimalism**. It utilizes high-quality typography, generous whitespace to reduce cognitive load, and a refined use of tonal layers. Since the application is designed for the Arabic language (RTL), the visual balance is mirrored to ensure a natural reading flow from right to left, emphasizing a premium and organized user experience.\n\n## Colors\nThe palette is rooted in a deep Indigo primary color, chosen to evoke stability and professionalism. \n\n- **Primary (Indigo):** Used for main actions, active states, and brand identifiers.\n- **Secondary (Light Gray):** The foundational background color to keep the interface feeling airy and clean.\n- **Success (Green):** Specifically reserved for income, positive trends, and completion states.\n- **Danger (Red):** Used for expenses, over-budget alerts, and destructive actions.\n- **Neutrals:** A range of grays from Slate-900 (Text) to Gray-500 (Sub-labels) ensures high legibility and hierarchical depth.\n\n## Typography\nThe system uses **Inter** for its exceptional legibility in data-heavy environments and its clean, neutral character. \n\nFor the Arabic implementation, the system relies on system fonts or high-quality sans-serif equivalents that match Inter’s x-height and geometric balance. Headlines are bold and assertive to provide clear section signposting. Body text maintains a comfortable line-height (1.6) to ensure financial statements and transaction lists are easy to scan. All typography is right-aligned by default to support the RTL layout.\n\n## Layout & Spacing\nThis design system employs a **12-column fluid grid** for desktop and a **4-column grid** for mobile. \n\n- **Desktop:** 24px gutters with 48px page margins.\n- **Mobile:** 16px gutters with 16px page margins.\n\nThe spacing scale is based on a 4px baseline, ensuring all elements align to a consistent rhythm. Layouts should favor \"Surface-first\" grouping, where related financial data is housed within cards rather than floating freely. In RTL mode, the sidebar or navigation drawer is anchored to the right, and the content flows toward the left.\n\n## Elevation & Depth\nDepth is created using a combination of **Tonal Layers** and **Ambient Shadows**.\n\n1.  **Level 0 (Background):** Secondary Light Gray (#F9FAFB).\n2.  **Level 1 (Cards/Content):** Pure White (#FFFFFF) with a `shadow-sm` (0 1px 2px 0 rgba(0, 0, 0, 0.05)).\n3.  **Level 2 (Modals/Dropdowns):** Pure White with a `shadow-lg` to create a distinct separation from the base content.\n\nBorders are used sparingly, primarily as subtle 1px dividers in `#E5E7EB` to separate list items or table rows without adding visual noise.\n\n## Shapes\nThe shape language is friendly yet structured. The primary container unit is the **2xl Card**, which provides a soft, approachable feel to the financial data. \n\n- **Large Containers (Cards, Modals):** 1.5rem (24px) - `rounded-2xl`.\n- **Standard Components (Buttons, Inputs):** 0.5rem (8px) - `rounded-md`.\n- **Small Elements (Chips, Tags):** Full pill-shape for easy identification.\n\n## Components\n### Buttons\n- **Primary:** Solid Indigo background, White text. High contrast, bold weight.\n- **Secondary:** Light Gray background with Dark Gray text for less prominent actions.\n- **State:** On hover, primary buttons darken by 10%. Active states should show a subtle inner shadow.\n\n### Cards\n- White background, `rounded-2xl` corners, and `shadow-sm`. \n- Used for transaction summaries, budget progress, and account balances.\n\n### Input Fields\n- White background with a 1px border (#D1D5DB).\n- **Focus State:** 2px solid Indigo (#4F46E5) border with a soft Indigo outer glow.\n- Labels are positioned above the input, right-aligned.\n\n### Chips & Badges\n- Used for transaction categories. \n- Income uses Success Green with 10% opacity background and solid green text. \n- Expenses use Danger Red with 10% opacity background and solid red text.\n\n### Progress Bars\n- Used for budgets. The track is Light Gray, and the fill is Primary Indigo. \n- If a budget is exceeded, the fill color dynamically switches to Danger Red.",
+        "colorVariant": "FIDELITY",
+        "overridePrimaryColor": "#4f46e5",
+        "overrideSecondaryColor": "#f9fafb",
+        "spacingScale": 2,
+        "typography": {
+          "body-lg": {
+            "fontFamily": "Inter",
+            "fontSize": "18px",
+            "fontWeight": "400",
+            "lineHeight": "1.6"
+          },
+          "body-md": {
+            "fontFamily": "Inter",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "1.6"
+          },
+          "headline-lg-mobile": {
+            "fontFamily": "Inter",
+            "fontSize": "24px",
+            "fontWeight": "700",
+            "lineHeight": "1.3"
+          },
+          "headline-md": {
+            "fontFamily": "Inter",
+            "fontSize": "24px",
+            "fontWeight": "600",
+            "lineHeight": "1.4"
+          },
+          "label-md": {
+            "fontFamily": "Inter",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "lineHeight": "1.4"
+          },
+          "label-sm": {
+            "fontFamily": "Inter",
+            "fontSize": "12px",
+            "fontWeight": "600",
+            "lineHeight": "1.2"
+          },
+          "display-lg": {
+            "fontFamily": "Inter",
+            "fontSize": "48px",
+            "fontWeight": "700",
+            "lineHeight": "1.2",
+            "letterSpacing": "-0.02em"
+          },
+          "headline-lg": {
+            "fontFamily": "Inter",
+            "fontSize": "32px",
+            "fontWeight": "700",
+            "lineHeight": "1.3"
+          }
+        },
+        "spacing": {
+          "container-max": "1280px",
+          "2xl": "48px",
+          "md": "16px",
+          "base": "4px",
+          "xs": "4px",
+          "xl": "32px",
+          "sm": "8px",
+          "gutter": "24px",
+          "lg": "24px"
+        },
+        "headlineFontFamily": "Inter",
+        "bodyFontFamily": "Inter",
+        "labelFontFamily": "Inter"
+      }
+    },
+    "version": "1"
+  }
+}
