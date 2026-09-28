@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html dir="rtl" lang="ar"><head>
 <meta charset="utf-8"/>
@@ -120,7 +120,7 @@
 <header class="md:hidden bg-surface-container-lowest shadow-sm fixed w-full top-0 left-0 right-0 z-50 h-16">
 <div class="flex flex-row-reverse justify-between items-center px-md h-16 w-full max-w-container-max mx-auto">
 <div class="text-headline-md-mobile font-headline-md font-bold text-primary">Masarifi</div>
-<button class="text-on-surface-variant font-label-md bg-transparent border-none p-2 rounded-lg hover:bg-surface-variant/10 active:scale-95 duration-150">
+<button data-logout-btn class="text-on-surface-variant font-label-md bg-transparent border-none p-2 rounded-lg hover:bg-surface-variant/10 active:scale-95 duration-150">
                 تسجيل الخروج
             </button>
 </div>
@@ -130,30 +130,34 @@
 <div class="mb-xl flex flex-col items-center gap-sm mt-lg">
 <img alt="Masarifi Logo" class="w-16 h-16 rounded-full object-cover shadow-sm" src="assets/logo.png" onerror="this.src='https://lh3.googleusercontent.com/aida-public/AB6AXuD57fq0J3YyJ3JL7YEe01r3JqWBvzcUMf-S64kXhViP8gpp7n5azpfPiAuY5CB9i9XyEdtVFJ_IweDZGolco77PV-NVOeI2mgCvJbc6YkIIys5Ddi91gl0s_uDOq3d9-KX1ZUBtZ2VBWEz0ntUd75sa1Qm56DtgsVtEitgsqYeLq-RsiW8vMQvInMKkJVI0VR28mXiGbKe2xUl8cEO3b1EnPn74KElyeiWUw0RIFDcW949frmtBIQUE7qqsXg5yAzJYlQ'"/>
 <div class="text-center">
-<h2 class="font-headline-md text-headline-md text-primary">أهلاً بك، مستخدم!</h2>
+<h2 id="user-display-name" class="font-headline-md text-headline-md text-primary">أهلاً بك، مستخدم!</h2>
 <p class="font-label-md text-label-md text-on-surface-variant">إدارة أموالك بذكاء</p>
 </div>
 </div>
-<nav class="flex flex-col gap-xs flex-grow" data-active-classes="text-primary font-bold bg-primary-container/20">
-<a class="flex items-center gap-md p-md rounded-lg text-on-surface-variant transition-all duration-200 ease-in-out hover:bg-surface-variant/50" data-path="dashboard" href="index.html">
-<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
-<span class="font-label-md text-label-md">الرئيسية</span>
-</a>
-<a class="flex items-center gap-md p-md rounded-lg text-on-surface-variant transition-all duration-200 ease-in-out hover:bg-surface-variant/50" data-path="budget" href="budget.html">
-<span class="material-symbols-outlined" data-icon="account_balance_wallet">account_balance_wallet</span>
-<span class="font-label-md text-label-md">الميزانية</span>
-</a>
-<a class="flex items-center gap-md p-md rounded-lg text-on-surface-variant transition-all duration-200 ease-in-out hover:bg-surface-variant/50" data-path="reports" href="reports.html">
-<span class="material-symbols-outlined" data-icon="bar_chart">bar_chart</span>
-<span class="font-label-md text-label-md">التقارير</span>
-</a>
-<a aria-current="page" class="flex items-center gap-md p-md rounded-lg transition-all duration-200 ease-in-out text-primary font-bold bg-primary-container/20" data-path="settings" href="settings.html">
-<span class="material-symbols-outlined icon-fill" data-icon="settings">settings</span>
-<span class="font-label-md text-label-md">الإعدادات</span>
-</a>
+<nav class="flex flex-col gap-1.5 flex-grow">
+  <!-- Active Item: الرئيسية -->
+  <a class="flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-200 ease-in-out text-on-surface-variant hover:text-primary hover:bg-surface-variant/40 font-medium" href="index.html">
+    <span class="material-symbols-outlined text-[22px]">dashboard</span>
+    <span class="text-sm">الرئيسية</span>
+  </a>
+  <!-- Active Item: الميزانية -->
+  <a class="flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-200 ease-in-out text-on-surface-variant hover:text-primary hover:bg-surface-variant/40 font-medium" href="budget.html">
+    <span class="material-symbols-outlined text-[22px]">account_balance_wallet</span>
+    <span class="text-sm">الميزانية</span>
+  </a>
+  <!-- Active Item: التقارير -->
+  <a class="flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-200 ease-in-out text-on-surface-variant hover:text-primary hover:bg-surface-variant/40 font-medium" href="reports.html">
+    <span class="material-symbols-outlined text-[22px]">bar_chart</span>
+    <span class="text-sm">التقارير</span>
+  </a>
+  <!-- Active Item: الإعدادات -->
+  <a class="flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-200 ease-in-out text-primary font-bold bg-primary-container/15" href="settings.html">
+    <span class="material-symbols-outlined icon-fill text-[22px]">settings</span>
+    <span class="text-sm">الإعدادات</span>
+  </a>
 </nav>
 <div class="mt-auto">
-<button class="w-full flex justify-center items-center gap-sm p-sm rounded-lg text-on-surface-variant hover:bg-surface-variant/50 transition-colors">
+<button data-logout-btn class="w-full flex justify-center items-center gap-sm p-sm rounded-lg text-on-surface-variant hover:bg-surface-variant/50 transition-colors">
 <span class="material-symbols-outlined" data-icon="logout">logout</span>
 <span class="font-label-md text-label-md">تسجيل الخروج</span>
 </button>
@@ -166,7 +170,7 @@
 <div class="flex flex-col gap-xs">
 <div class="flex items-center gap-sm">
 <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary">
-<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">tune</span>
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">tune</span>
 </span>
 <h1 class="font-headline-lg text-headline-lg text-on-surface">إعدادات الحساب والتطبيق</h1>
 </div>
@@ -176,11 +180,11 @@
 </div>
 <!-- Action Buttons -->
 <div class="flex items-center gap-sm self-stretch md:self-auto">
-<button class="flex-1 md:flex-none px-lg py-sm rounded-xl font-label-md text-label-md bg-secondary-container text-on-secondary-container hover:bg-surface-variant transition-colors shadow-sm text-center" type="button">
+<button id="btn-cancel-settings" class="flex-1 md:flex-none px-lg py-sm rounded-xl font-label-md text-label-md bg-secondary-container text-on-secondary-container hover:bg-surface-variant transition-colors shadow-sm text-center" type="button">
         إلغاء التعديلات
       </button>
 <button class="flex-1 md:flex-none flex items-center justify-center gap-xs px-lg py-sm rounded-xl font-label-md text-label-md bg-primary-container text-on-primary hover:bg-primary transition-all shadow-md active:scale-95" id="save-btn" onclick="triggerSaveNotification()" type="button">
-<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span class="material-symbols-outlined text-lg">check_circle</span>
 <span>حفظ التغييرات</span>
 </button>
 </div>
@@ -188,34 +192,34 @@
 <!-- Interactive Save Success Notification Banner -->
 <div class="hidden transition-all duration-300 transform items-center justify-between p-md rounded-xl bg-surface-container-lowest shadow-md" id="save-toast">
 <div class="flex items-center gap-sm text-primary">
-<span class="material-symbols-outlined text-[24px]">verified</span>
+<span class="material-symbols-outlined text-2xl">verified</span>
 <span class="font-label-md text-label-md text-on-surface">تم حفظ كافة تفضيلاتك وإعدادات الحساب بنجاح!</span>
 </div>
-<button class="text-on-surface-variant hover:text-on-surface" onclick="this.parentElement.classList.add('hidden')">
-<span class="material-symbols-outlined text-[20px]">close</span>
+<button aria-label="�����" class="text-on-surface-variant hover:text-on-surface" onclick="this.parentElement.classList.add('hidden')">
+<span class="material-symbols-outlined text-xl">close</span>
 </button>
 </div>
 <!-- Settings Horizontal Tabs -->
 <div class="overflow-x-auto no-scrollbar w-full pb-1">
 <div class="flex items-center gap-xs p-xs bg-surface-container-high rounded-2xl w-max md:w-full whitespace-nowrap">
 <button class="tab-btn active flex items-center gap-xs px-md py-sm rounded-xl font-label-md text-label-md text-primary bg-surface-container-lowest shadow-sm transition-all shrink-0" onclick="switchTab(this, 'profile-panel')" type="button">
-<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">person</span>
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">person</span>
 <span>الملف الشخصي</span>
 </button>
 <button class="tab-btn flex items-center gap-xs px-md py-sm rounded-xl font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all shrink-0" onclick="switchTab(this, 'financial-panel')" type="button">
-<span class="material-symbols-outlined text-[20px]">account_balance_wallet</span>
+<span class="material-symbols-outlined text-xl">account_balance_wallet</span>
 <span>التفضيلات المالية</span>
 </button>
 <button class="tab-btn flex items-center gap-xs px-md py-sm rounded-xl font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all shrink-0" onclick="switchTab(this, 'notifications-panel')" type="button">
-<span class="material-symbols-outlined text-[20px]">notifications_active</span>
+<span class="material-symbols-outlined text-xl">notifications_active</span>
 <span>الإشعارات والذكاء الاصطناعي</span>
 </button>
 <button class="tab-btn flex items-center gap-xs px-md py-sm rounded-xl font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all shrink-0" onclick="switchTab(this, 'security-panel')" type="button">
-<span class="material-symbols-outlined text-[20px]">shield</span>
+<span class="material-symbols-outlined text-xl">shield</span>
 <span>الأمان والبيانات</span>
 </button>
 <button class="tab-btn flex items-center gap-xs px-md py-sm rounded-xl font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all shrink-0" onclick="switchTab(this, 'danger-panel')" type="button">
-<span class="material-symbols-outlined text-[20px] text-error">warning</span>
+<span class="material-symbols-outlined text-xl text-error">warning</span>
 <span class="text-error">المنطقة الخطرة</span>
 </button>
 </div>
@@ -239,19 +243,19 @@
 <!-- Avatar Upload Row -->
 <div class="flex flex-col sm:flex-row items-center gap-lg p-md bg-surface-container-low rounded-xl">
 <div class="relative group cursor-pointer">
-<img class="w-24 h-24 rounded-full object-cover shadow-sm ring-4 ring-surface-container-lowest" data-alt="Professional modern portrait photo of a confident Middle Eastern man in a smart casual polo against a soft neutral studio background, realistic warm lighting, clean and premium corporate profile photo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWsWnRSXyMWn2DbtZzC7-5QTbpA4QdbNK4LMELye0l3a6GfNi2maafednmN-nyuZJvXxzXdxX5MBLOe-jiiZVKRz1KbKUUh0BoZuUz7ehfekUfKIm7AOcK1zJgeh7xtlwm1xzjvobAsRhynT9g0wfxFvwdd-r3YNjVbuh0CXOMA8B4YkuAlZ613T2NSXuuQlhFeIbwWAFat3379W0R-MHL1Wje3ZB5XDr8yXoEI7nnzPtbhpqoe_dp"/>
+<img class="w-24 h-24 rounded-full object-cover shadow-sm ring-4 ring-surface-container-lowest" alt="Professional modern portrait photo of a confident Middle Eastern man in a smart casual polo against a soft neutral studio background, realistic warm lighting, clean and premium corporate profile photo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWsWnRSXyMWn2DbtZzC7-5QTbpA4QdbNK4LMELye0l3a6GfNi2maafednmN-nyuZJvXxzXdxX5MBLOe-jiiZVKRz1KbKUUh0BoZuUz7ehfekUfKIm7AOcK1zJgeh7xtlwm1xzjvobAsRhynT9g0wfxFvwdd-r3YNjVbuh0CXOMA8B4YkuAlZ613T2NSXuuQlhFeIbwWAFat3379W0R-MHL1Wje3ZB5XDr8yXoEI7nnzPtbhpqoe_dp"/>
 <div class="absolute inset-0 bg-on-surface/40 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-<span class="material-symbols-outlined text-surface-container-lowest text-[24px]">photo_camera</span>
+<span class="material-symbols-outlined text-surface-container-lowest text-2xl">photo_camera</span>
 </div>
 </div>
 <div class="flex flex-col sm:items-start items-center gap-xs">
 <h4 class="font-label-md text-label-md text-on-surface font-semibold">صورة الملف الشخصي</h4>
 <p class="font-label-sm text-label-sm text-on-surface-variant text-center sm:text-right">يُفضل رفع صورة مربعة ذات دقة مناسبة (PNG أو JPG بحجم أقصى 2MB)</p>
 <div class="flex items-center gap-xs mt-xs">
-<button class="px-md py-xs rounded-lg font-label-sm text-label-sm bg-primary text-on-primary hover:bg-primary/90 transition-colors shadow-sm" type="button">
+<button id="btn-add-email" class="px-md py-xs rounded-lg font-label-sm text-label-sm bg-primary text-on-primary hover:bg-primary/90 transition-colors shadow-sm" type="button">
                 رفع صورة جديدة
               </button>
-<button class="px-md py-xs rounded-lg font-label-sm text-label-sm bg-surface-container-high text-on-surface-variant hover:text-error transition-colors" type="button">
+<button id="btn-remove-email" class="px-md py-xs rounded-lg font-label-sm text-label-sm bg-surface-container-high text-on-surface-variant hover:text-error transition-colors" type="button">
                 إزالة
               </button>
 </div>
@@ -262,29 +266,29 @@
 <div class="flex flex-col gap-xs">
 <label class="font-label-md text-label-md text-on-surface">الاسم الكامل</label>
 <div class="relative flex items-center">
-<input class="w-full bg-surface-container-low rounded-xl px-md py-sm pr-10 font-body-md text-body-md text-on-surface outline-none focus:bg-surface-container-lowest focus:shadow-md transition-all placeholder:text-on-surface-variant/50" type="text" value="محمد عبد الله العتيبي"/>
-<span class="material-symbols-outlined absolute right-3 text-on-surface-variant text-[20px]">badge</span>
+<input id="settings-name-input" class="w-full bg-surface-container-low rounded-xl px-md py-sm pr-10 font-body-md text-body-md text-on-surface outline-none focus:bg-surface-container-lowest focus:shadow-md transition-all placeholder:text-on-surface-variant/50" type="text" value=""/>
+<span class="material-symbols-outlined absolute right-3 text-on-surface-variant text-xl">badge</span>
 </div>
 </div>
 <div class="flex flex-col gap-xs">
 <label class="font-label-md text-label-md text-on-surface">البريد الإلكتروني</label>
 <div class="relative flex items-center">
-<input class="w-full bg-surface-container-low rounded-xl px-md py-sm pr-10 font-body-md text-body-md text-on-surface outline-none focus:bg-surface-container-lowest focus:shadow-md transition-all placeholder:text-on-surface-variant/50 text-left" dir="ltr" type="email" value="mohammed@example.com"/>
-<span class="material-symbols-outlined absolute right-3 text-on-surface-variant text-[20px]">mail</span>
+<input id="settings-email-input" class="w-full bg-surface-container-low rounded-xl px-md py-sm pr-10 font-body-md text-body-md text-on-surface outline-none focus:bg-surface-container-lowest focus:shadow-md transition-all placeholder:text-on-surface-variant/50 text-left" dir="rtl" type="email" value=""/>
+<span class="material-symbols-outlined absolute right-3 text-on-surface-variant text-xl">mail</span>
 </div>
 </div>
 <div class="flex flex-col gap-xs">
 <label class="font-label-md text-label-md text-on-surface">رقم الجوال</label>
 <div class="relative flex items-center">
-<input class="w-full bg-surface-container-low rounded-xl px-md py-sm pr-10 font-body-md text-body-md text-on-surface outline-none focus:bg-surface-container-lowest focus:shadow-md transition-all placeholder:text-on-surface-variant/50 text-left" dir="ltr" type="tel" value="+966 50 123 4567"/>
-<span class="material-symbols-outlined absolute right-3 text-on-surface-variant text-[20px]">call</span>
+<input class="w-full bg-surface-container-low rounded-xl px-md py-sm pr-10 font-body-md text-body-md text-on-surface outline-none focus:bg-surface-container-lowest focus:shadow-md transition-all placeholder:text-on-surface-variant/50 text-left" dir="rtl" type="tel" value="+966 50 123 4567"/>
+<span class="material-symbols-outlined absolute right-3 text-on-surface-variant text-xl">call</span>
 </div>
 </div>
 <div class="flex flex-col gap-xs">
 <label class="font-label-md text-label-md text-on-surface">المدينة والدولة</label>
 <div class="relative flex items-center">
 <input class="w-full bg-surface-container-low rounded-xl px-md py-sm pr-10 font-body-md text-body-md text-on-surface outline-none focus:bg-surface-container-lowest focus:shadow-md transition-all placeholder:text-on-surface-variant/50" type="text" value="الرياض، المملكة العربية السعودية"/>
-<span class="material-symbols-outlined absolute right-3 text-on-surface-variant text-[20px]">location_on</span>
+<span class="material-symbols-outlined absolute right-3 text-on-surface-variant text-xl">location_on</span>
 </div>
 </div>
 </div>
@@ -310,8 +314,8 @@
 <option value="KWD">الدينار الكويتي (KWD / د.ك)</option>
 <option value="EUR">اليورو الأوروبي (EUR / €)</option>
 </select>
-<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px] pointer-events-none">payments</span>
-<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px] pointer-events-none">expand_more</span>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-xl pointer-events-none">payments</span>
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-lg pointer-events-none">expand_more</span>
 </div>
 <span class="font-label-sm text-label-sm text-on-surface-variant">تُعرض جميع الإحصائيات والميزانيات المجمعة بهذه العملة</span>
 </div>
@@ -325,8 +329,8 @@
 <option value="25">يوم 25 من كل شهر</option>
 <option value="30">نهاية الشهر الميلادي</option>
 </select>
-<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px] pointer-events-none">calendar_month</span>
-<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px] pointer-events-none">expand_more</span>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-xl pointer-events-none">calendar_month</span>
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-lg pointer-events-none">expand_more</span>
 </div>
 <span class="font-label-sm text-label-sm text-on-surface-variant">يعاد احتساب حدود الميزانيات وتصفير المؤشرات بناءً على هذا اليوم</span>
 </div>
@@ -336,7 +340,7 @@
 <div class="flex items-center justify-between gap-md">
 <div class="flex items-center gap-sm flex-1 min-w-0">
 <span class="w-8 h-8 rounded-lg bg-tertiary-container/15 text-tertiary-container flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-[20px]">notification_important</span>
+<span class="material-symbols-outlined text-xl">notification_important</span>
 </span>
 <div class="flex-1 min-w-0">
 <h4 class="font-label-md text-label-md text-on-surface font-semibold">تنبيه الاقتراب من تجاوز الميزانية</h4>
@@ -345,7 +349,7 @@
 </div>
 <label class="relative inline-flex items-center cursor-pointer shrink-0">
 <input checked="" class="sr-only peer" type="checkbox"/>
-<div class="w-11 h-6 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:right-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+<div class="w-11 h-6 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:right-0.5 after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
 </label>
 </div>
 <div class="flex flex-col gap-xs pt-xs">
@@ -353,8 +357,8 @@
 <span class="text-on-surface-variant">الحد الأدنى للتنبيه:</span>
 <span class="text-primary font-bold" id="threshold-val">80% من إجمالي الميزانية</span>
 </div>
-<input class="w-full h-2 bg-surface-container-highest rounded-lg appearance-none cursor-pointer accent-primary" max="95" min="50" oninput="document.getElementById('threshold-val').innerText = this.value + '% من إجمالي الميزانية'" type="range" value="80"/>
-<div class="flex justify-between text-[11px] text-on-surface-variant">
+<input id="settings-threshold-slider" class="w-full h-2 bg-surface-container-highest rounded-lg appearance-none cursor-pointer accent-primary" max="95" min="50" oninput="document.getElementById('threshold-val').innerText = this.value + '% من إجمالي الميزانية'" type="range" value="80"/>
+<div class="flex justify-between text-xs text-on-surface-variant">
 <span>50% (مبكر جداً)</span>
 <span>80% (موصى به)</span>
 <span>95% (حرج)</span>
@@ -376,7 +380,7 @@
 <div class="flex items-center justify-between p-md rounded-xl hover:bg-surface-container-low transition-colors gap-md">
 <div class="flex items-start gap-md flex-1 min-w-0">
 <span class="p-2 rounded-lg bg-primary-container/15 text-primary flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-[22px]">receipt_long</span>
+<span class="material-symbols-outlined text-2xl">receipt_long</span>
 </span>
 <div class="flex flex-col flex-1 min-w-0">
 <span class="font-label-md text-label-md text-on-surface font-semibold">تأكيد تسجيل المصاريف اليومية</span>
@@ -385,14 +389,14 @@
 </div>
 <label class="relative inline-flex items-center cursor-pointer shrink-0">
 <input checked="" class="sr-only peer" type="checkbox"/>
-<div class="w-11 h-6 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:right-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+<div class="w-11 h-6 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:right-0.5 after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
 </label>
 </div>
 <!-- Toggle Row 2 -->
 <div class="flex items-center justify-between p-md rounded-xl hover:bg-surface-container-low transition-colors gap-md">
 <div class="flex items-start gap-md flex-1 min-w-0">
 <span class="p-2 rounded-lg bg-surface-tint/15 text-primary flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-[22px]">mail_outline</span>
+<span class="material-symbols-outlined text-2xl">mail_outline</span>
 </span>
 <div class="flex flex-col flex-1 min-w-0">
 <span class="font-label-md text-label-md text-on-surface font-semibold">ملخص الإنفاق والادخار الأسبوعي</span>
@@ -401,26 +405,26 @@
 </div>
 <label class="relative inline-flex items-center cursor-pointer shrink-0">
 <input checked="" class="sr-only peer" type="checkbox"/>
-<div class="w-11 h-6 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:right-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+<div class="w-11 h-6 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:right-0.5 after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
 </label>
 </div>
 <!-- Toggle Row 3 -->
 <div class="flex items-center justify-between p-md rounded-xl bg-surface-container-low/60 hover:bg-surface-container-low transition-colors gap-md">
 <div class="flex items-start gap-md flex-1 min-w-0">
 <span class="p-2 rounded-lg bg-tertiary-container/15 text-tertiary flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
 </span>
 <div class="flex flex-col flex-1 min-w-0">
 <div class="flex items-center gap-xs flex-wrap">
 <span class="font-label-md text-label-md text-on-surface font-semibold">رؤى الذكاء الاصطناعي لاكتشاف فرص التوفير</span>
-<span class="px-xs py-0.5 rounded text-[11px] font-semibold bg-tertiary-fixed text-on-tertiary-fixed whitespace-nowrap">ذكي</span>
+<span class="px-xs py-0.5 rounded text-xs font-semibold bg-tertiary-fixed text-on-tertiary-fixed whitespace-nowrap">ذكي</span>
 </div>
 <span class="font-label-sm text-label-sm text-on-surface-variant break-words">اكتشاف الاشتراكات المكررة، والمطاعم المرتفعة مع نصائح فورية لتخفيض الصرف</span>
 </div>
 </div>
 <label class="relative inline-flex items-center cursor-pointer shrink-0">
 <input checked="" class="sr-only peer" type="checkbox"/>
-<div class="w-11 h-6 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:right-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+<div class="w-11 h-6 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:right-0.5 after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
 </label>
 </div>
 </div>
@@ -439,14 +443,14 @@
 <div class="p-md rounded-xl bg-surface-container-low flex flex-col justify-between gap-md">
 <div class="flex items-center gap-sm">
 <span class="p-2 rounded-lg bg-surface-container-highest text-on-surface-variant">
-<span class="material-symbols-outlined text-[20px]">lock_reset</span>
+<span class="material-symbols-outlined text-xl">lock_reset</span>
 </span>
 <div>
 <h4 class="font-label-md text-label-md text-on-surface font-semibold">كلمة المرور</h4>
 <p class="font-label-sm text-label-sm text-on-surface-variant">تم التحديث منذ 4 أشهر</p>
 </div>
 </div>
-<button class="w-full py-xs px-md rounded-lg font-label-md text-label-md bg-surface-container-highest hover:bg-surface-variant text-on-surface transition-colors text-center" type="button">
+<button id="btn-change-password" class="w-full py-xs px-md rounded-lg font-label-md text-label-md bg-surface-container-highest hover:bg-surface-variant text-on-surface transition-colors text-center" type="button">
               تغيير كلمة المرور
             </button>
 </div>
@@ -455,7 +459,7 @@
 <div class="flex items-center justify-between">
 <div class="flex items-center gap-sm">
 <span class="p-2 rounded-lg bg-green-100 text-green-700">
-<span class="material-symbols-outlined text-[20px]">security</span>
+<span class="material-symbols-outlined text-xl">security</span>
 </span>
 <div>
 <h4 class="font-label-md text-label-md text-on-surface font-semibold">التحقق بخطوتين (2FA)</h4>
@@ -464,7 +468,7 @@
 </div>
 <span class="inline-block w-2.5 h-2.5 rounded-full bg-green-500 animate-pulse"></span>
 </div>
-<button class="w-full py-xs px-md rounded-lg font-label-md text-label-md bg-surface-container-highest hover:bg-surface-variant text-on-surface transition-colors text-center" type="button">
+<button id="btn-manage-2fa" class="w-full py-xs px-md rounded-lg font-label-md text-label-md bg-surface-container-highest hover:bg-surface-variant text-on-surface transition-colors text-center" type="button">
               إدارة أجهزة المصادقة
             </button>
 </div>
@@ -473,15 +477,15 @@
 <div class="p-md rounded-xl bg-surface-container flex flex-col sm:flex-row items-center justify-between gap-md">
 <div class="flex items-center gap-md">
 <span class="w-10 h-10 rounded-xl bg-primary-container text-on-primary flex items-center justify-center shadow-sm">
-<span class="material-symbols-outlined text-[22px]">download_for_offline</span>
+<span class="material-symbols-outlined text-2xl">download_for_offline</span>
 </span>
 <div>
 <h4 class="font-label-md text-label-md text-on-surface font-semibold">تصدير بيانات السجلات والميزانية</h4>
 <p class="font-label-sm text-label-sm text-on-surface-variant">تحميل أرشيف كامل لكافة المعاملات المالية بصيغة Excel أو JSON</p>
 </div>
 </div>
-<button class="flex items-center gap-xs px-md py-sm rounded-xl font-label-md text-label-md bg-surface-container-lowest text-primary shadow-sm hover:shadow transition-all whitespace-nowrap" type="button">
-<span class="material-symbols-outlined text-[18px]">table_view</span>
+<button id="btn-export-data" class="flex items-center gap-xs px-md py-sm rounded-xl font-label-md text-label-md bg-surface-container-lowest text-primary shadow-sm hover:shadow transition-all whitespace-nowrap" type="button">
+<span class="material-symbols-outlined text-lg">table_view</span>
 <span>تصدير CSV / JSON</span>
 </button>
 </div>
@@ -490,7 +494,7 @@
 <section class="bg-surface-container-lowest rounded-2xl p-lg md:p-xl shadow-sm flex flex-col gap-lg border-r-4 border-r-error" id="danger-panel">
 <div class="flex items-center gap-sm">
 <span class="p-2 rounded-lg bg-error-container text-error">
-<span class="material-symbols-outlined text-[22px]">delete_forever</span>
+<span class="material-symbols-outlined text-2xl">delete_forever</span>
 </span>
 <div>
 <h2 class="font-headline-md text-headline-md text-error">المنطقة الخطرة</h2>
@@ -503,7 +507,7 @@
 <h4 class="font-label-md text-label-md text-on-surface font-semibold">تصفير كافة العمليات والحركات المالية</h4>
 <p class="font-label-sm text-label-sm text-on-surface-variant break-words">سيتم حذف سجل المصاريف والمداخيل مع الإبقاء على الحساب والتصنيفات الأساسية.</p>
 </div>
-<button class="px-md py-xs rounded-lg font-label-md text-label-md bg-surface-container-lowest text-error hover:bg-error-container transition-colors shadow-sm whitespace-nowrap shrink-0" type="button">
+<button id="btn-clear-data" class="px-md py-xs rounded-lg font-label-md text-label-md bg-surface-container-lowest text-error hover:bg-error-container transition-colors shadow-sm whitespace-nowrap shrink-0" type="button">
               تصفير العمليات
             </button>
 </div>
@@ -512,7 +516,7 @@
 <h4 class="font-label-md text-label-md text-error font-bold">حذف الحساب نهائياً</h4>
 <p class="font-label-sm text-label-sm text-on-surface-variant break-words">حذف شامل لكافة البيانات الشخصية، السجلات، والميزانيات فوراً وإلغاء الاشتراك.</p>
 </div>
-<button class="px-md py-xs rounded-lg font-label-md text-label-md bg-error text-on-error hover:bg-error/90 transition-colors shadow-sm whitespace-nowrap shrink-0" type="button">
+<button id="btn-delete-account" class="px-md py-xs rounded-lg font-label-md text-label-md bg-error text-on-error hover:bg-error/90 transition-colors shadow-sm whitespace-nowrap shrink-0" type="button">
               حذف الحساب
             </button>
 </div>
@@ -528,10 +532,10 @@
 <div class="absolute -top-6 -right-6 w-24 h-24 rounded-full bg-white/10 blur-lg pointer-events-none"></div>
 <div class="flex items-center gap-sm">
 <div class="w-10 h-10 rounded-xl bg-white/20 backdrop-blur-md flex items-center justify-center">
-<span class="material-symbols-outlined text-[24px] text-white">enhanced_encryption</span>
+<span class="material-symbols-outlined text-2xl text-white">enhanced_encryption</span>
 </div>
 <div>
-<h3 class="font-headline-md text-[18px] font-bold text-white">تشفير مصرفي متكامل</h3>
+<h3 class="font-headline-md text-lg font-bold text-white">تشفير مصرفي متكامل</h3>
 <span class="font-label-sm text-label-sm text-on-primary-container">AES-256 Bit Encryption</span>
 </div>
 </div>
@@ -550,7 +554,7 @@
 <div class="bg-surface-container-lowest rounded-2xl p-lg shadow-sm flex flex-col gap-md">
 <div class="flex items-center justify-between">
 <h3 class="font-label-md text-label-md text-on-surface font-semibold">مساحة تخزين الإيصالات السحابية</h3>
-<span class="px-xs py-0.5 rounded text-[11px] font-bold bg-primary/10 text-primary">خطة بلس</span>
+<span class="px-xs py-0.5 rounded text-xs font-bold bg-primary/10 text-primary">خطة بلس</span>
 </div>
 <!-- Inline Data Visualizer (Storage Bar) -->
 <div class="flex flex-col gap-xs">
@@ -561,37 +565,37 @@
 <div class="w-full h-3 bg-surface-container-high rounded-full overflow-hidden flex">
 <div class="h-full bg-primary rounded-full transition-all duration-500" style="width: 28%;"></div>
 </div>
-<span class="text-[11px] text-on-surface-variant">يتم حفظ صور الفواتير والإيصالات المرفقة تلقائياً لمدة 5 سنوات</span>
+<span class="text-xs text-on-surface-variant">يتم حفظ صور الفواتير والإيصالات المرفقة تلقائياً لمدة 5 سنوات</span>
 </div>
 <!-- Sync Devices List -->
 <div class="pt-xs flex flex-col gap-xs">
 <span class="font-label-sm text-label-sm text-on-surface font-semibold">الأجهزة المتصلة حالياً:</span>
 <div class="flex items-center justify-between p-xs rounded-lg hover:bg-surface-container-low transition-colors">
 <div class="flex items-center gap-xs">
-<span class="material-symbols-outlined text-primary text-[18px]">phone_iphone</span>
+<span class="material-symbols-outlined text-primary text-lg">phone_iphone</span>
 <div class="flex flex-col">
 <span class="font-label-sm text-label-sm text-on-surface">iPhone 15 Pro Max</span>
-<span class="text-[10px] text-on-surface-variant">نشط الآن • الرياض</span>
+<span class="text-xs text-on-surface-variant">نشط الآن • الرياض</span>
 </div>
 </div>
 <span class="w-2 h-2 rounded-full bg-green-500"></span>
 </div>
 <div class="flex items-center justify-between p-xs rounded-lg hover:bg-surface-container-low transition-colors">
 <div class="flex items-center gap-xs">
-<span class="material-symbols-outlined text-on-surface-variant text-[18px]">laptop_mac</span>
+<span class="material-symbols-outlined text-on-surface-variant text-lg">laptop_mac</span>
 <div class="flex flex-col">
 <span class="font-label-sm text-label-sm text-on-surface">MacBook Pro 16"</span>
-<span class="text-[10px] text-on-surface-variant">منذ 3 ساعات • الرياض</span>
+<span class="text-xs text-on-surface-variant">منذ 3 ساعات • الرياض</span>
 </div>
 </div>
-<button class="text-on-surface-variant hover:text-error text-[11px]">تسجيل خروج</button>
+<button class="text-on-surface-variant hover:text-error text-xs">تسجيل خروج</button>
 </div>
 </div>
 </div>
 <!-- Financial Tip / Assistant Card -->
 <div class="bg-surface-container-lowest rounded-2xl p-lg shadow-sm flex flex-col gap-sm">
 <div class="flex items-center gap-xs text-primary">
-<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">tips_and_updates</span>
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">tips_and_updates</span>
 <span class="font-label-md text-label-md font-semibold">نصيحة مصاريفي الذكية</span>
 </div>
 <p class="font-label-sm text-label-sm text-on-surface-variant leading-relaxed">
@@ -601,7 +605,7 @@
 <!-- App Version & Legal Info -->
 <div class="flex flex-col items-center justify-center p-md text-center gap-xs text-on-surface-variant">
 <span class="font-label-sm text-label-sm">تطبيق مصاريفي - الإصدار v3.4.2 (2025)</span>
-<div class="flex items-center gap-md text-[12px]">
+<div class="flex items-center gap-md text-xs">
 <a class="hover:text-primary transition-colors underline" href="#">شروط الاستخدام</a>
 <span>•</span>
 <a class="hover:text-primary transition-colors underline" href="#">سياسة الخصوصية</a>
@@ -651,7 +655,7 @@
 <div class="bg-surface-container-lowest rounded-2xl shadow-lg w-full max-w-md relative z-10 overflow-hidden flex flex-col">
 <div class="p-lg border-b border-outline-variant/30 flex justify-between items-center">
 <h3 class="font-headline-md text-headline-md text-on-surface">إضافة عملية جديدة</h3>
-<button class="text-on-surface-variant hover:text-error transition-colors p-1 rounded-full hover:bg-surface-variant/20" onclick="document.getElementById('transaction-modal').classList.add('hidden')">
+<button aria-label="�����" aria-label="�����" class="text-on-surface-variant hover:text-error transition-colors p-1 rounded-full hover:bg-surface-variant/20" onclick="document.getElementById('$1').classList.add('hidden')">
 <span class="material-symbols-outlined" data-icon="close">close</span>
 </button>
 </div>
@@ -676,13 +680,13 @@
 <label class="font-label-md text-label-md text-on-surface-variant">المبلغ</label>
 <div class="relative">
 <span class="absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant font-body-md">$</span>
-<input class="w-full bg-surface-container-lowest border border-outline rounded-lg px-md py-sm pl-md pr-8 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-body-md text-on-surface transition-shadow" placeholder="0.00" type="number"/>
+<input class="w-full bg-surface-container-lowest border border-outline rounded-lg px-md py-sm pr-8 pl-md text-right focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-body-md text-on-surface transition-shadow" placeholder="0.00" type="number"/>
 </div>
 </div>
 <!-- Category Select -->
 <div class="flex flex-col gap-xs">
 <label class="font-label-md text-label-md text-on-surface-variant">التصنيف</label>
-<select class="w-full bg-surface-container-lowest border border-outline rounded-lg px-md py-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-body-md text-on-surface transition-shadow appearance-none">
+<select id="modal-category" dir="rtl" class="w-full bg-surface-container-lowest border border-outline rounded-lg px-md py-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-body-md text-on-surface transition-shadow appearance-none">
 <option>تسوق</option>
 <option>طعام</option>
 <option>مواصلات</option>
@@ -697,14 +701,18 @@
 </div>
 </div>
 <div class="p-lg bg-surface-container flex gap-md justify-end border-t border-outline-variant/30 mt-auto">
-<button class="px-md py-sm rounded-lg font-label-md text-label-md bg-secondary-container text-on-secondary-container hover:bg-surface-variant transition-colors" onclick="document.getElementById('transaction-modal').classList.add('hidden')">
-                    إلغاء
-                </button>
 <button class="px-md py-sm rounded-lg font-label-md text-label-md bg-primary-container text-on-primary hover:bg-primary transition-colors shadow-sm">
                     حفظ العملية
                 </button>
+<button aria-label="�����" class="px-md py-sm rounded-lg font-label-md text-label-md bg-secondary-container text-on-secondary-container hover:bg-surface-variant transition-colors" onclick="document.getElementById('transaction-modal').classList.add('hidden')">
+                    إلغاء
+                </button>
 </div>
 </div>
 </div>
-<script src="js/settings.js"></script>
+<script type="module" src="js/settings.js"></script>
 </body></html>
+
+
+
+

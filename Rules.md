@@ -30,6 +30,7 @@ masarifi/
 - Interactions: Add transactions via a centered Modal (Popup) with a backdrop blur. Inputs must be clear and accessible.
 - Responsiveness: Must look perfect on mobile screens (stacked layout) and expand to grid layouts on desktop.
 - Mandatory Responsiveness Step: ALWAYS, immediately after fetching a new interface from Stitch (or any source), review and fix all responsiveness issues (add `overflow-x-auto` for tables/tabs, `flex-wrap`, proper widths, etc.) before writing any other logic.
+- Stitch MCP Workflow: Do NOT refactor or rewrite existing, stable interfaces just to use Stitch. For existing good UI, optionally extract its styles into a "Design System" in Stitch. Use Stitch exclusively for generating *new* screens, features, or variants to match the existing design system.
 # [5] Coding & Architectural Constraints
 - Clean Code: Use descriptive variable names (e.g., `totalIncome`, `transactionModal`).
 - State Management: Store the current month's data in memory (JS arrays) after fetching from Supabase, update the UI dynamically without page reload.

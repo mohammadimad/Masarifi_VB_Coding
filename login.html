@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="utf-8">
@@ -47,11 +47,11 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="bg-background min-h-screen flex items-center justify-center p-4 text-on-surface">
-  <main class="w-full max-w-[440px]">
+  <main class="w-full max-w-md">
     <!-- Brand / Logo Area -->
     <div class="text-center mb-8">
       <div class="inline-block p-2 bg-white rounded-3xl shadow-sm border border-outline-variant/30 mb-3">
-        <img src="assets/logo.png" alt="شعار مصاريفي" class="h-20 w-20 object-contain mx-auto">
+        <img src="assets/logo.png" alt="شعار مصاريفي - إدارة أموالك" class="h-20 w-20 object-contain mx-auto">
       </div>
       <h1 class="text-2xl font-bold text-primary">مصاريفي</h1>
       <p class="text-sm text-on-surface-variant mt-1">إدارة أموالك ومصاريفك بذكاء وسهولة</p>
@@ -61,10 +61,10 @@
     <div class="bg-surface-container-lowest rounded-2xl shadow-sm p-6 sm:p-8 border border-outline-variant/40">
       <!-- Tabs -->
       <div class="flex p-1 bg-surface-container rounded-xl mb-6">
-        <button id="tab-login" class="flex-1 py-2 text-sm font-semibold rounded-lg bg-white text-primary shadow-sm transition-all">
+        <button id="tab-login" class="flex-1 py-2 text-sm font-semibold rounded-lg bg-white text-primary shadow-sm transition-all" aria-label="تبويب تسجيل الدخول">
           تسجيل الدخول
         </button>
-        <button id="tab-signup" class="flex-1 py-2 text-sm font-semibold rounded-lg text-on-surface-variant hover:text-on-surface transition-all">
+        <button id="tab-signup" class="flex-1 py-2 text-sm font-semibold rounded-lg text-on-surface-variant hover:text-on-surface transition-all" aria-label="تبويب إنشاء حساب">
           إنشاء حساب
         </button>
       </div>
@@ -76,11 +76,11 @@
           <label class="block text-sm font-medium text-on-surface mb-2" for="email">البريد الإلكتروني</label>
           <div class="relative">
             <div class="absolute inset-y-0 right-0 pr-3.5 flex items-center pointer-events-none text-outline">
-              <span class="material-symbols-outlined text-[20px]">mail</span>
+              <span class="material-symbols-outlined text-xl" aria-hidden="true">mail</span>
             </div>
             <input 
               class="block w-full rounded-xl border border-outline-variant/70 bg-surface-container-lowest text-on-surface text-sm pr-11 pl-4 py-3 focus:border-primary-container focus:ring-2 focus:ring-primary-container/20 focus:outline-none transition-all placeholder:text-outline" 
-              dir="ltr" 
+              dir="rtl" 
               id="email" 
               name="email" 
               placeholder="name@example.com" 
@@ -95,11 +95,11 @@
           <label class="block text-sm font-medium text-on-surface mb-2" for="password">كلمة المرور</label>
           <div class="relative">
             <div class="absolute inset-y-0 right-0 pr-3.5 flex items-center pointer-events-none text-outline">
-              <span class="material-symbols-outlined text-[20px]">lock</span>
+              <span class="material-symbols-outlined text-xl" aria-hidden="true">lock</span>
             </div>
             <input 
               class="block w-full rounded-xl border border-outline-variant/70 bg-surface-container-lowest text-on-surface text-sm pr-11 pl-4 py-3 focus:border-primary-container focus:ring-2 focus:ring-primary-container/20 focus:outline-none transition-all placeholder:text-outline" 
-              dir="ltr" 
+              dir="rtl" 
               id="password" 
               name="password" 
               placeholder="••••••••" 
@@ -122,7 +122,7 @@
         </div>
 
         <!-- Message Box -->
-        <div id="auth-message" class="hidden p-3 rounded-xl text-xs font-medium text-center"></div>
+        <div id="auth-message" class="hidden p-3 rounded-xl text-xs font-medium text-center" aria-live="polite"></div>
 
         <!-- Submit Button -->
         <div>
@@ -209,7 +209,7 @@
       const password = document.getElementById('password').value;
 
       submitBtn.disabled = true;
-      submitBtn.innerHTML = '<span class="material-symbols-outlined animate-spin text-[18px]">progress_activity</span> جارٍ المعالجة...';
+      submitBtn.innerHTML = '<span class="material-symbols-outlined animate-spin text-lg" aria-hidden="true">progress_activity</span> جارٍ المعالجة...';
 
       try {
         if (isLoginMode) {
@@ -237,3 +237,6 @@
   </script>
 </body>
 </html>
+
+
+

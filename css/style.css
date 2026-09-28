@@ -27,6 +27,39 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* ==========================================================================
+   إصلاح التصميم لكروت الميزانية والتقارير (Financial KPI Layout & Typography)
+   ========================================================================== */
+
+/* منع تمدد الحاويات الكبيرة في الجريد */
+.grid > div,
+.flex > div {
+  min-width: 0;
+}
+
+/* ضبط حجم الخط وتغليف المبالغ المالية بطريقة متناسبة مع الكروت */
+[id^="budget-kpi-total"],
+[id^="budget-kpi-spent"],
+[id^="budget-kpi-remaining"],
+[id^="budget-kpi-burn-rate"],
+[id^="report-kpi-net-flow"],
+[id^="report-kpi-budget"],
+[id^="report-kpi-expenses"],
+[id^="stat-current-balance"],
+[id^="stat-total-income"],
+[id^="stat-total-expenses"] {
+  font-size: clamp(1.25rem, 2vw, 1.75rem) !important; /* 20px - 28px max for clean KPI display */
+  line-height: 1.25 !important;
+  letter-spacing: -0.02em !important;
+  font-weight: 800 !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  display: inline-block !important;
+  max-width: 100% !important;
+  vertical-align: middle;
+}
+
 .material-symbols-outlined {
   font-family: 'Material Symbols Outlined';
   font-weight: normal;
